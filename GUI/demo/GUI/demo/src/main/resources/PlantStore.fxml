@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefWidth="1500" prefHeight="850"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="application.PlantStoreController"
+            style="-fx-background-color: #dcdcdc;">
+
+    <Label layoutX="70" layoutY="40" text="Plant Store">
+        <font><Font size="40"/></font>
+    </Label>
+
+    <VBox layoutX="280" layoutY="120" prefWidth="280" prefHeight="280" alignment="CENTER" spacing="10"
+          style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: #efefef;">
+        <Label text="Turnip"><font><Font size="28"/></font></Label>
+        <Label text="Price:10"/>
+        <Label text="Yield:2"/>
+        <Label text="Max Growth:3"/>
+        <Label text="Preferred Soil: loam"/>
+        <Label text="Crop Price:6"/>
+        <Button text="Select" onAction="#handleTurnip" prefWidth="120"/>
+    </VBox>
+
+    <VBox layoutX="635" layoutY="120" prefWidth="280" prefHeight="280" alignment="CENTER" spacing="10"
+          style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: #efefef;">
+        <Label text="Wheat"><font><Font size="28"/></font></Label>
+        <Label text="Price:15"/>
+        <Label text="Yield:4"/>
+        <Label text="Max Growth:5"/>
+        <Label text="Preferred Soil: loam"/>
+        <Label text="Crop Price:5"/>
+        <Button text="Select" onAction="#handleWheat" prefWidth="120"/>
+    </VBox>
+
+    <VBox layoutX="995" layoutY="120" prefWidth="280" prefHeight="280" alignment="CENTER" spacing="10"
+          style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: #efefef;">
+        <Label text="Thyme"><font><Font size="28"/></font></Label>
+        <Label text="Price:25"/>
+        <Label text="Yield:6"/>
+        <Label text="Max Growth:10"/>
+        <Label text="Preferred Soil: gravel"/>
+        <Label text="Crop Price:7"/>
+        <Button text="Select" onAction="#handleThyme" prefWidth="120"/>
+    </VBox>
+
+    <VBox layoutX="280" layoutY="495" prefWidth="280" prefHeight="280" alignment="CENTER" spacing="10"
+          style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: #efefef;">
+        <Label text="Potato"><font><Font size="28"/></font></Label>
+        <Label text="Price:20"/>
+        <Label text="Yield:3"/>
+        <Label text="Max Growth:7"/>
+        <Label text="Preferred Soil: sand"/>
+        <Label text="Crop Price:8"/>
+        <Button text="Select" onAction="#handlePotato" prefWidth="120"/>
+    </VBox>
+
+    <VBox layoutX="995" layoutY="495" prefWidth="280" prefHeight="280" alignment="CENTER" spacing="10"
+          style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: #efefef;">
+        <Label text="Tomato"><font><Font size="28"/></font></Label>
+        <Label text="Price:10"/>
+        <Label text="Yield:9"/>
+        <Label text="Max Growth:15"/>
+        <Label text="Preferred Soil: sand"/>
+        <Label text="Crop Price:3"/>
+        <Button text="Select" onAction="#handleTomato" prefWidth="120"/>
+    </VBox>
+
+</AnchorPane>
