@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           fx:controller="application.StartMenuController"
+           prefWidth="1000" prefHeight="600"
+           style="-fx-background-color: #dcdcdc;">
+
+    <VBox alignment="CENTER" spacing="20"
+          maxWidth="650" maxHeight="320"
+          style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: #efefef;">
+
+        <padding>
+            <Insets top="30" right="40" bottom="30" left="40"/>
+        </padding>
+
+        <Label text="Welcome to Verdant Sun Farming Simulator">
+            <font><Font size="32"/></font>
+        </Label>
+
+        <Label text="Enter Name:"/>
+
+        <TextField fx:id="nameField" prefWidth="300"/>
+
+        <HBox spacing="40">
+            <Button text="Check Leaderboard" onAction="#handleLeaderboard"/>
+            <Button text="Confirm" onAction="#handleConfirm"/>
+        </HBox>
+
+    </VBox>
+</StackPane>

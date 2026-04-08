@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefWidth="1600" prefHeight="900"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="application.GameController"
+            style="-fx-background-color: #dcdcdc;">
+
+    <VBox layoutX="40" layoutY="30"
+          prefWidth="320" prefHeight="170"
+          spacing="10"
+          style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: #efefef; -fx-padding: 15;">
+        <Label fx:id="playerNameLabel" text="Player Name">
+            <font><Font size="24"/></font>
+        </Label>
+        <Label fx:id="dayLabel" text="Day 1">
+            <font><Font size="24"/></font>
+        </Label>
+        <Label fx:id="savingsLabel" text="Savings: 1000">
+            <font><Font size="24"/></font>
+        </Label>
+        <Label fx:id="waterLabel" text="Water: 10/10">
+            <font><Font size="24"/></font>
+        </Label>
+    </VBox>
+
+    <VBox fx:id="plantInfoBox"
+          layoutX="50" layoutY="680"
+          prefWidth="340" prefHeight="170"
+          spacing="8"
+          style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: #efefef; -fx-padding: 12;">
+        <Label text="Plant Info:">
+            <font><Font size="28"/></font>
+        </Label>
+        <Label fx:id="plantTypeLabel" text="Soil Type:">
+            <font><Font size="18"/></font>
+        </Label>
+        <Label fx:id="stageLabel" text="">
+            <font><Font size="18"/></font>
+        </Label>
+        <Label fx:id="wateredLabel" text="">
+            <font><Font size="18"/></font>
+        </Label>
+        <Label fx:id="readyHarvestLabel" text="">
+            <font><Font size="18"/></font>
+        </Label>
+    </VBox>
+
+    <GridPane fx:id="farmGrid"
+              layoutX="450" layoutY="110"
+              hgap="0" vgap="0"
+              style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: white;">
+    </GridPane>
+
+    <Button layoutX="1310" layoutY="170"
+            prefWidth="260" prefHeight="65"
+            text="Plant"
+            onAction="#handlePlant"
+            style="-fx-font-size: 30; -fx-border-color: black; -fx-border-width: 2; -fx-background-color: #efefef;"/>
+
+    <Button layoutX="1310" layoutY="255"
+            prefWidth="260" prefHeight="65"
+            text="Water"
+            onAction="#handleWater"
+            style="-fx-font-size: 30; -fx-border-color: black; -fx-border-width: 2; -fx-background-color: #efefef;"/>
+
+    <Button layoutX="1310" layoutY="340"
+            prefWidth="260" prefHeight="65"
+            text="Refill Water"
+            onAction="#handleRefillWater"
+            style="-fx-font-size: 26; -fx-border-color: black; -fx-border-width: 2; -fx-background-color: #efefef;"/>
+
+    <Button layoutX="1310" layoutY="425"
+            prefWidth="260" prefHeight="65"
+            text="Fertilizer"
+            onAction="#handleFertilizer"
+            style="-fx-font-size: 30; -fx-border-color: black; -fx-border-width: 2; -fx-background-color: #efefef;"/>
+
+    <Button layoutX="1310" layoutY="510"
+            prefWidth="260" prefHeight="65"
+            text="Harvest"
+            onAction="#handleHarvest"
+            style="-fx-font-size: 30; -fx-border-color: black; -fx-border-width: 2; -fx-background-color: #efefef;"/>
+
+    <Button layoutX="1310" layoutY="595"
+            prefWidth="260" prefHeight="65"
+            text="Next Day"
+            onAction="#handleNextDay"
+            style="-fx-font-size: 30; -fx-border-color: black; -fx-border-width: 2; -fx-background-color: #efefef;"/>
+
+    <Button fx:id="excavateButton"
+            layoutX="1310" layoutY="680"
+            prefWidth="260" prefHeight="65"
+            text="Excavate"
+            onAction="#handleExcavate"
+            disable="true"
+            style="-fx-font-size: 30; -fx-border-color: gray; -fx-border-width: 2; -fx-background-color: #efefef; -fx-text-fill: gray;"/>
+
+</AnchorPane>
